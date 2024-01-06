@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>        <!--Header tag. We used this attribute used for style, meta tag and so on. -->
+    
+    <title>Class 02 Practice</title>           <!--Title tag used for rename the browser Tab bar-->
+
+    <style>             /* CSS code started */ 
+
+
+        #full-body{
+            border: solid tomato 7px;
+            border-radius: 20px;
+            margin: 10px 60px 10px 60px;
+            padding: 10px 20px 10px 20px;
+            height: 800px;
+        }
+        .middle-text{
+            text-align: center;
+        }
+
+        .highlight{
+            color: blue;
+        }
+
+        #list-division {
+            border: solid red 2px;
+            border-radius: 5px;
+            margin: 10px 37px;
+            padding: 10px 0px 10px 40px;
+            width: 43%;   /* Used to define border width */ 
+            height: 130px;
+            font-family: Verdana;
+            float: left;
+        }
+
+
+    </style>           <!--CSS code End-->
+
+
+
+</head>
+<body>
+    <div id="full-body">
+        <h1 class="middle-text">Basic html and CSS practice - Class 02</h1>
+        <h2 class="middle-text">Instution - Eshikhon.com</h2>
+        <h3 class="middle-text">Developed By Abdul Hannan Anik</h3>
+
+        <p style="font-family: verdana;"> The <span class="highlight"> Markup Language or HTML</span> is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.HTML describes the structure of a web page semantically and originally included cues for its appearance. HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. Source: <a href="https://en.wikipedia.org/wiki/HTML#:~:text=HTML%20describes%20the%20structure%20of,embedded%20into%20the%20rendered%20page." style="font-style: italic; font-weight: 600; font-size: 17px;">Wikipedia</a></p>
+    
+            <h3 style="font-family:Verdana;">Let's make a difference between HTML &amp; HTML5</h3>
+    
+    
+            <div>             <!--Division Tag. This division tag used for design the table-->
+                <ol id="list-division" style="list-style-type: upper-roman;">
+                    <p style="text-align: center; color: blue; font-size: large; font-weight: 600; font-family: Verdana; ">HTML</p>
+                    <li>HTML does not provide native audio and video support.</li>
+                    <li>HTML only supports vector graphics if used in conjunction with different technologies like Flash, VML, or Silverlight.</li>
+                    <li>HTML allows inline MathML and SVG in text with restricted use.</li>
+                </ol>
+            
+    
+                <ul id="list-division" style="list-style-type: square;">
+                    <p style="text-align: center; color: blue; font-size: large; font-weight: 600; font-family: Verdana; ">HTML5</p>
+                    <li>HTML5 provides native audio and video support. </li>
+                    <li>HTML5 supports SVG (Scalable Vector Graphics), Canvas, and other virtual vector graphics.</li>
+                    <li>HTML5 allows inline MathML and SVG in text.</li>
+                </ul>
+            </div>
+    
+            
+            <p style="font-family: verdana;"> <span style="font-style: italic; color: blue; font-weight: bold;"> Question:</span> Why text go outside of the border in list-division when I use padding:10px ?</p>
+            <p style="font-family: verdana;"> <span style="font-style: italic; color: blue; font-weight: bold;"> Question:</span> Why division border is not take all the element inside the division ? Line: 15</p>
+            <p style="font-family: verdana;"> <span style="font-style: italic; color: blue; font-weight: bold;"> Question:</span> Why paragraph insert the left side of list division ? In line 30 if we make width 43 to 40, we will see the difference.</p>
+            <p style="font-family: verdana;"> <span style="font-style: italic; color: blue; font-weight: bold;"> Question:</span> How we input line break from two paragraph? Give a line break between list division and question 1.</p>
+            
+    </div>
+
+</body>
+</html>
