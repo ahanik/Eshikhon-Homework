@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class 04 Practice</title>
+
+    <style>
+        #header_tag{
+            background-color: #1b5376;
+            margin: 5px 40px 0px 40px;
+            height: 130px;
+            color: white;
+        }
+
+        #header_left{
+            float: left;
+            padding: 15px 10px 0px 10px;
+        }
+        #header_right{
+            float: right;
+            padding: 0px 50px 0px 10px;
+            font-family: Helvetica;
+            font-size: 16.5px;
+            font-weight: bold;
+        }
+
+        .parts{
+            background-color: #1b5376;
+            height: 50px;
+            margin: -15px 40px 0px 40px;
+        }
+
+        #form{
+            margin: 5px 40px 0px 40px;
+            height: 1100px;
+        }
+
+        .label_name{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+
+        .input_datatext{
+            width: 40%;
+            padding: 15px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .input_datatext:focus{
+            background-color: rgb(204, 233, 243);
+        }
+
+        .dropdown{
+            width: 20%;
+            padding: 15px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .dropdown:focus{
+            background-color: rgb(204, 233, 243);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header id="header_tag">
+        <div id="header_left">
+            <img src="images/EShikhon_Logo.png" width="500px" alt="Eshikhon Logo">
+        </div>
+
+        <div id="header_right">
+            <p>WEB DEVELOPMENT COURSE</p>
+            <p>CLASS 05 ASSIGNMENT</p>
+            <p>MOBILE: +8801900001111</p>
+        </div>
+    </header>   
+
+    <div class="parts">
+        <p style="font-family: helvetica; color: white; text-align: center; font-size: 25px; font-weight: bold; padding-top: 10px;">JOB APPLICATION FORM</p>
+    </div>
+
+
+    <div id="form">
+        <form action="" method="get" autocomplete="on">
+
+            <fieldset style="border: #1b5376 solid 3px;">
+                <legend style="font-family: verdana; color: #1b5376; font-weight: bold;">PERSONAL INFORMATION</legend>
+
+
+
+            <label class="label_name">Applicant's full Name:</label>
+            <input type="text" name="full_name" class="input_datatext" placeholder="Enter your full name" required>
+            <br><br>
+            <label class="label_name">Father's Name:</label>
+            <input type="text" name="father_name" class="input_datatext" placeholder="Enter your father's name">
+            <label class="label_name">&nbsp;&nbsp;Mother's Name:</label>
+            <input type="text" name="mother_name" class="input_datatext" placeholder="Enter your mother's name">
+            <br><br>
+            <label class="label_name">Phone no:</label>
+            <input type="number" name="phone_no" class="input_datatext" placeholder="Enter your phone no">
+            <label class="label_name">&nbsp;&nbsp;Email Address:</label>
+            <input type="email" name="email" class="input_datatext" placeholder="Enter your email address">
+            <br><br>
+            <label class="label_name">Date of Birth: </label>
+            <input type="date" name="dob" class="input_datatext">
+            <label class="label_name">&nbsp;&nbsp;Gender:</label>
+            <input type="radio" name="gender" value="Male"> <span style="font-family: verdana;">Male</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="Female"> <span style="font-family: verdana;">Female</span>
+
+            </fieldset>
+
+
+            <br><br>
+            <fieldset style="border: #1b5376 solid 3px;">
+                <legend style="font-family: verdana; color: #1b5376; font-weight: bold;">EDUCATIONAL INFORMATION</legend>
+
+                <label class="label_name">Degree 1:</label>
+            <select name="ssc_hsc" class="dropdown">
+                <option value="ssc">SSC</option>
+                <option value="hsc">HSC</option>
+            </select>
+            <select name="grade" class="dropdown">
+                <option value="a_plus">A+</option>
+                <option value="just_a">A</option>
+                <option value="a_minus">A-</option>
+            </select>
+            <input type="text" placeholder="Enter institution name" class="input_datatext">
+
+            <br><br>
+
+            <label class="label_name">Degree 2:</label>
+            <select name="ssc_hsc1" class="dropdown">
+                <option value="ssc">SSC</option>
+                <option value="hsc">HSC</option>
+            </select>
+            <select name="grade1" class="dropdown">
+                <option value="a_plus">A+</option>
+                <option value="just_a">A</option>
+                <option value="a_minus">A-</option>
+            </select>
+            <input type="text" placeholder="Enter institution name" class="input_datatext">
+            <br><br>
+
+            <label class="label_name">Degree 3:</label>
+            <select name="bsc" class="dropdown">
+                <option value="bsc">B.SC</option>
+            </select>
+
+            <input type="text" placeholder="Enter CGPA" class="dropdown">
+            <input type="text" placeholder="Enter institution name" class="input_datatext">
+
+            </fieldset>
+            
+            <br>
+            
+            <br>
+            
+            <br>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter a password">
+            <label>Confirm Password:</label>
+            <input type="password" name="c_password" placeholder="Enter the password again">
+            <br>
+            <label>Upload your own resume if you have any:</label>
+            <input type="file" name="resume_file">
+            <br>
+            
+
+            <br>
+            
+
+            <br>
+            <label>Skills</label>
+            <br>
+            <label>HTML &amp; CSS:</label>
+            1<input type="range" name="html_s" min="1" max="100">100
+            <br>
+            <label>Javascript:</label>
+            1<input type="range" name="javascript_s" min="1" max="100">100 
+            <br>
+            <label>ReactJS &amp; NextJS:</label>
+            1<input type="range" name="reactjs_s" min="1" max="100">100
+
+            <br>
+            <label>Job ID:</label>
+            <input type="text" name="job_id" value="JID_34165" readonly>
+
+            <br>
+            <label>About yourself:</label>
+            <textarea name="aboutyourself" placeholder="write yourself in 200 words" id="" cols="25" rows="8"></textarea>
+            <br>
+            <input type="checkbox" name="ckbox">
+            <label>I am agree with the company terms and conditions.</label>
+
+            <br>
+            <input type="submit" name="sbtn" value="Confirm data">
+        </form>
+    </div>
+
+
+
+    <div class="parts" style="margin-top: 10px;">
+        <p style="font-family: helvetica; color: white; text-align: center; font-size: 15px; font-weight: bold; padding-top: 15px;">This web page is developved using HTML &amp; CSS</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class 04 Practice</title>
+
+    <style>
+        #header_tag{
+            background-color: #1b5376;
+            margin: 5px 40px 0px 40px;
+            height: 130px;
+            color: white;
+        }
+
+        #header_left{
+            float: left;
+            padding: 15px 10px 0px 10px;
+        }
+        #header_right{
+            float: right;
+            padding: 0px 50px 0px 10px;
+            font-family: Helvetica;
+            font-size: 16.5px;
+            font-weight: bold;
+        }
+
+        .parts{
+            background-color: #1b5376;
+            height: 50px;
+            margin: -15px 40px 0px 40px;
+        }
+
+        #table_p1_division{
+            margin: 5px 40px 0px 40px;
+            height: 380px;
+        }
+
+
+        #table_p2_division{
+            margin: 5px 40px 0px 40px;
+        }
+        .tb_p2, .tr_p2, .td_p2{
+            border: solid 3px black;
+            border-collapse: collapse;
+        }
+
+        .tb_p2{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .td_p2{
+            padding: 15px 0px;
+        }
+        
+        .td_p2:hover{
+            background-color: #1b5376;
+            color: white;
+            font-size: 25px;
+        }
+
+
+        #table_p1_section1{
+            height: 370px;
+            float: left;
+            width: 20%;
+            margin: 10px 0px 5px 10px;
+        }
+
+        #table_p1_section2{
+            height: 370px;
+            float: right;
+            width: 78%;
+            margin: 10px 0px 5px 10px;
+            padding: 3px;
+        }
+
+        .td_p1_s2{
+           padding: 0px 12.5px 5px 12.5px; 
+        }
+
+        .td_p1_s2:hover, .td_p1_s1:hover{
+            background-color: #1b5376;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="header_tag">
+        <div id="header_left">
+            <img src="images/EShikhon_Logo.png" width="500px" alt="Eshikhon Logo">
+        </div>
+
+        <div id="header_right">
+            <p>WEB DEVELOPMENT COURSE</p>
+            <p>CLASS 04 ASSIGNMENT</p>
+            <p>MOBILE: +8801900001111</p>
+        </div>
+    </header>   
+
+    <div class="parts">
+        <p style="font-family: helvetica; color: white; text-align: center; font-size: 25px; font-weight: bold; padding-top: 10px;">PART ONE</p>
+    </div>
+
+
+    <div id="table_p1_division">
+        <div id="table_p1_section1">
+            <h3>Gaming accessories</h3>
+            <table>
+                <tr>
+                    <td class="td_p1_s1"><img src="images/headset.jpg" alt="Headset" width="175px" height="100px"> <p style="font-family: Helvetica; text-align: center;">Headset</p></td>
+                    <td class="td_p1_s1"><img src="images/keyboard.jpg" alt="keyboard" width="175px" height="100px"> <p style="font-family: Helvetica; text-align: center;">keyboard</p></td>
+                </tr>
+
+                <tr>
+                    <td class="td_p1_s1"><img src="images/mouse.jpg" alt="mouse" width="175px" height="100px"> <p style="font-family: Helvetica; text-align: center;">Mouse</p></td>
+                    <td class="td_p1_s1"><img src="images/chair.jpg" alt="chair" width="175px" height="100px"> <p style="font-family: Helvetica; text-align: center;">Chair</p></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="table_p1_section2">
+            <table>
+                <tr>
+                    <td class="td_p1_s2">
+                        <h3>Toys under $25</h3>
+                        <img src="images/toys.jpg" alt="Toys" width="320px" height="300px">
+                    </td>
+                    <td class="td_p1_s2">
+                        <h3>Deals in PCs</h3>
+                        <img src="images/pc.jpg" alt="pc deals" width="320px" height="300px">
+                    </td>
+                    <td class="td_p1_s2">
+                        <h3>Beauty steals under $25</h3>
+                        <img src="images/beauty_product.jpg" alt="Beauty Product" width="320px" height="300px">
+                    </td>
+                    <td class="td_p1_s2">
+                        <h3>Home décor under $50</h3>
+                        <img src="images/home_decor.jpg" alt="Home decor" width="320px" height="300px">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="parts">
+        <p style="font-family: helvetica; color: white; text-align: center; font-size: 25px; font-weight: bold; padding-top: 10px;">PART TWO</p>
+    </div>
+
+
+    <div id="table_p2_division">
+        <table class="tb_p2">
+            <tr class="tr_p2">
+                <td class="td_p2" colspan="2">1</td>
+                <td class="td_p2">2</td>
+                <td class="td_p2">3</td>
+                <td class="td_p2">4</td>
+            </tr>
+
+            <tr class="tr_p2">
+                <td class="td_p2">5</td>
+                <td class="td_p2" colspan="2">6</td>
+                <td class="td_p2">7</td>
+                <td class="td_p2" rowspan="2">8</td>
+            </tr>
+
+            <tr class="tr_p2">
+                <td class="td_p2" rowspan="2">9</td>
+                <td class="td_p2">10</td>
+                <td class="td_p2">11</td>
+                <td class="td_p2">12</td>
+            </tr>
+
+            <tr class="tr_p2">
+                <td class="td_p2" colspan="2" rowspan="2">14</td>
+                <td class="td_p2">15</td>
+                <td class="td_p2">16</td>
+            </tr>
+
+            <tr class="tr_p2">
+                <td class="td_p2">13</td>
+                <td class="td_p2" colspan="2">17</td>
+            </tr>
+            
+            <tr class="tr_p2">
+                <td class="td_p2" colspan="2">18</td>
+                <td class="td_p2">19</td>
+                <td class="td_p2">20</td>
+                <td class="td_p2">21</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="parts" style="margin-top: 10px;">
+        <p style="font-family: helvetica; color: white; text-align: center; font-size: 15px; font-weight: bold; padding-top: 15px;">This web page is developved using HTML &amp; CSS</p>
+    </div>
+    
+</body>
+</html>
