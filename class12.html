@@ -189,7 +189,7 @@
 <div class="all_methods">
     <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">StartsWith Method</h3>
     <input type="text" name="" class="data_input" id="data_input8" placeholder="Enter your text">
-    <input type="text" name="" class="data_input" id="data_input9" placeholder="What you search for">
+    <input type="text" name="" class="data_input" id="data_input9" placeholder="What you search for (case sensitive)">
     <button style="margin-left: 250px; font-size: 13px;" onclick="result6()" class="result_btn" id="btn4">StartsWith BTN</button>
     <input type="text" name="" class="result_input" id="result6" placeholder="Result will display after click StartWith button" readonly>
 
@@ -210,7 +210,7 @@
 <div class="all_methods">
     <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">Endswith Method</h3>
     <input type="text" name="" class="data_input" id="data_input10" placeholder="Enter your text">
-    <input type="text" name="" class="data_input" id="data_input11" placeholder="What you search for">
+    <input type="text" name="" class="data_input" id="data_input11" placeholder="What you search for (case sensitive)">
     <button style="margin-left: 250px; font-size: 13px;" onclick="result7()" class="result_btn" id="btn4">Endswith BTN</button>
     <input type="text" name="" class="result_input" id="result7" placeholder="Result will display after click Endswith button" readonly>
 
@@ -227,10 +227,26 @@
 <!--Endswith Method End-->
 
 
-        <div class="function">
-            <p>Hello</p>
-        </div>
 
+<!--IndexOF Method Start-->
+<div class="all_methods">
+    <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">IndexOF Method</h3>
+    <input type="text" name="" class="data_input" id="data_input12" placeholder="Enter your text">
+    <input type="text" name="" class="data_input" id="data_input13" placeholder="What you search for (case sensitive)">
+    <button style="margin-left: 250px; font-size: 13px;" onclick="result8()" class="result_btn" id="btn4">IndexOF BTN</button>
+    <input type="text" name="" class="result_input" id="result8" placeholder="Result will display after click IndexOF button" readonly>
+
+    <script>
+        
+        function result8(){
+            let d12_input = document.getElementById("data_input12").value;
+            let d13_input = document.getElementById("data_input13").value;
+
+            document.getElementById("result8").value = d12_input.indexOf(d13_input);
+        }
+    </script>
+</div>
+<!--IndexOF Method End-->
 
     </section>
 </body>
