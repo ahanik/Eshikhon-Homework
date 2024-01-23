@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Class 12 Assignment</title>
+    <style>
+        #full_section{
+            border:1px solid red;
+            display: grid;
+            grid-template-columns: repeat(2, 45%);
+            justify-content: center;
+            margin-top: 2%;
+            
+        }
+        .all_methods{
+            background-color: cadetblue;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 0% 10%;
+            color: white;
+        }
+        .data_input{
+            width: 600px;
+            font-family: Cambria;
+            font-size: 17px;
+            padding: 8px 20px;
+            margin: 4px 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .slice_from{
+            width: 150px;
+            font-family: Cambria;
+            font-size: 17px;
+            padding: 8px 20px;
+            margin: 4px 10px 4px 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .slice_to{
+            width: 150px;
+            font-family: Cambria;
+            font-size: 17px;
+            padding: 8px 20px;
+            margin: 4px 10px 4px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+        }
+
+        .result_btn{
+            width: 150px;
+            font-family: Cambria;
+            font-size: 17px;
+            padding: 8px 30px 8px 30px;
+            margin: 4px 40px 4px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: coral;
+            color: white; 
+        }
+
+        .result_input{
+            width: 600px;
+            font-family: Cambria;
+            font-size: 17px;
+            padding: 8px 20px;
+            margin: 4px 40px 20px 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+    </style>
+
 </head>
 <body>
-    
+    <section id="full_section">
+
+        <div class="all_methods">
+            <h3 style="text-align: center; font-size: 30px;">Slice Method</h3>
+            <input type="text" name="" class="data_input" id="data_input" placeholder="Enter Your Input Text">
+            <input type="text" name="" class="slice_from" id="slice_from" placeholder="slice from">
+            <input type="text" name="" class="slice_to" id="slice_to" placeholder="slice to">
+            <button onclick="result()" class="result_btn" id="btn">SLICE BTN</button>
+            <input type="text" name="" class="result_input" id="result" placeholder="result" readonly>
+
+
+            <script>
+                function result(){
+                    let d_input = document.getElementById("data_input").value;
+                    let s_from = document.getElementById("slice_from").value;
+                    let s_to = document.getElementById("slice_to").value;
+
+                    document.getElementById("result").value = d_input.slice(s_from, s_to);
+                }
+            </script>
+        </div>
+
+
+        <div class="function">
+            <p>Hello</p>
+        </div>
+
+        <div class="function">
+            <p>Hello</p>
+        </div>
+
+
+        <div class="function">
+            <p>Hello</p>
+        </div>
+    </section>
 </body>
 </html>
