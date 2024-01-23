@@ -16,7 +16,7 @@
             background-color: cadetblue;
             border: 2px solid black;
             border-radius: 5px;
-            margin: 0% 10%;
+            margin: 1% 10%;
             color: white;
         }
         .data_input{
@@ -123,10 +123,27 @@
 <!--Replace Method End-->
 
 
+<!--Concat and uppercase Method Start-->
+        <div class="all_methods">
+            <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">Concat and Uppercase Method</h3>
+            <input type="text" name="" class="data_input" id="data_input2" placeholder="Enter first name">
+            <input type="text" name="" class="data_input" id="data_input3" placeholder="Enter middle name">
+            <input type="text" name="" class="data_input" id="data_input4" placeholder="Enter surname">
+            <button style="margin-left: 250px;" onclick="result2()" class="result_btn" id="btn1">C&U BTN</button>
+            <input type="text" name="" class="result_input" id="result2" placeholder="Result will display after C&U button" readonly>
 
-        <div class="function">
-            <p>Hello</p>
+            <script>
+                function result2(){
+                    let d2_input = document.getElementById("data_input2").value;
+                    let d3_input = document.getElementById("data_input3").value;
+                    let d4_input = document.getElementById("data_input4").value;
+
+                    document.getElementById("result2").value = (d2_input.concat(" " + d3_input + " ").concat(d4_input + " ")).toUpperCase();
+                }
+            </script>
         </div>
+<!--Concat and uppercase Method end-->
+
 
 
         <div class="function">
