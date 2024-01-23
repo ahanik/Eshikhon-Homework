@@ -146,6 +146,33 @@
 
 
 
+        <div class="all_methods">
+            <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">PadStart and PadEnd Method</h3>
+            <input type="text" name="" class="data_input" maxlength="5" id="data_input5" placeholder="Enter your ID here">
+            <button style="margin-left: 250px;" onclick="result3()" class="result_btn" id="btn1">PS&PE BTN</button>
+            <input type="text" name="" class="result_input" id="result3" placeholder="Result of PadStart Method" readonly>
+            <input type="text" name="" class="result_input" id="result4" placeholder="Result PadEnd Method" readonly>
+
+            <script>
+                function result3(){
+                    let d5_input = document.getElementById("data_input5").value;
+
+                    document.getElementById("result3").value = d5_input.padStart(8, "0") +"         - PadStart Method";
+                    document.getElementById("result4").value = d5_input.padEnd(8, "0") +"         - PadEnd Method";
+                }
+
+            </script>
+        </div>
+
+
+        <div class="function">
+            <p>Hello</p>
+        </div>
+
+        <div class="function">
+            <p>Hello</p>
+        </div>
+
         <div class="function">
             <p>Hello</p>
         </div>
