@@ -6,7 +6,6 @@
     <title>Class 12 Assignment</title>
     <style>
         #full_section{
-            border:1px solid red;
             display: grid;
             grid-template-columns: repeat(2, 45%);
             justify-content: center;
@@ -82,13 +81,15 @@
 <body>
     <section id="full_section">
 
+
+<!--Slice Method Start-->
         <div class="all_methods">
-            <h3 style="text-align: center; font-size: 30px;">Slice Method</h3>
+            <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">Slice Method</h3>
             <input type="text" name="" class="data_input" id="data_input" placeholder="Enter Your Input Text">
             <input type="text" name="" class="slice_from" id="slice_from" placeholder="slice from">
             <input type="text" name="" class="slice_to" id="slice_to" placeholder="slice to">
             <button onclick="result()" class="result_btn" id="btn">SLICE BTN</button>
-            <input type="text" name="" class="result_input" id="result" placeholder="result" readonly>
+            <input type="text" name="" class="result_input" id="result" placeholder="Result will display after Slice button" readonly>
 
 
             <script>
@@ -101,11 +102,27 @@
                 }
             </script>
         </div>
+<!--Slice Method End-->
 
 
-        <div class="function">
-            <p>Hello</p>
+<!--Replace Method Start-->
+
+        <div class="all_methods">
+            <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">Replace Method</h3>
+            <input type="number" name="" class="data_input" id="data_input1" placeholder="Enter Your Phone Number in 11 digit">
+            <button style="margin-left: 250px; font-size: 13px;" onclick="result1()" class="result_btn" id="btn1">REPLACE BTN</button>
+            <input type="text" name="" class="result_input" id="result1" placeholder="Result will display after Replace button" readonly>
+
+            <script>
+                function result1(){
+                    let d1_input = document.getElementById("data_input1").value;
+                    document.getElementById("result1").value = d1_input.replace(d1_input, "+88 "+d1_input+ "    - Bangladesh Phone Number");
+                }
+            </script>
         </div>
+<!--Replace Method End-->
+
+
 
         <div class="function">
             <p>Hello</p>
