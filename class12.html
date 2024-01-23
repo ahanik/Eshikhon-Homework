@@ -185,13 +185,13 @@
 <!--Match Method End-->
 
 
-<!--Match Method Start-->
+<!--StartsWith Method Start-->
 <div class="all_methods">
-    <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">StartWith Method</h3>
+    <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">StartsWith Method</h3>
     <input type="text" name="" class="data_input" id="data_input8" placeholder="Enter your text">
     <input type="text" name="" class="data_input" id="data_input9" placeholder="What you search for">
-    <button style="margin-left: 250px;" onclick="result6()" class="result_btn" id="btn4">Match BTN</button>
-    <input type="text" name="" class="result_input" id="result6" placeholder="Result will display after click Match button" readonly>
+    <button style="margin-left: 250px; font-size: 13px;" onclick="result6()" class="result_btn" id="btn4">StartsWith BTN</button>
+    <input type="text" name="" class="result_input" id="result6" placeholder="Result will display after click StartWith button" readonly>
 
     <script>
         
@@ -203,16 +203,35 @@
         }
     </script>
 </div>
-<!--Match Method End-->
+<!--StartsWith Method End-->
+
+
+<!--Endswith Method Start-->
+<div class="all_methods">
+    <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">Endswith Method</h3>
+    <input type="text" name="" class="data_input" id="data_input10" placeholder="Enter your text">
+    <input type="text" name="" class="data_input" id="data_input11" placeholder="What you search for">
+    <button style="margin-left: 250px; font-size: 13px;" onclick="result7()" class="result_btn" id="btn4">Endswith BTN</button>
+    <input type="text" name="" class="result_input" id="result7" placeholder="Result will display after click Endswith button" readonly>
+
+    <script>
+        
+        function result7(){
+            let d10_input = document.getElementById("data_input10").value;
+            let d11_input = document.getElementById("data_input11").value;
+
+            document.getElementById("result7").value = d10_input.endsWith(d11_input);
+        }
+    </script>
+</div>
+<!--Endswith Method End-->
 
 
         <div class="function">
             <p>Hello</p>
         </div>
 
-        <div class="function">
-            <p>Hello</p>
-        </div>
+
     </section>
 </body>
 </html>
