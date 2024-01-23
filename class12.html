@@ -185,6 +185,26 @@
 <!--Match Method End-->
 
 
+<!--Match Method Start-->
+<div class="all_methods">
+    <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">StartWith Method</h3>
+    <input type="text" name="" class="data_input" id="data_input8" placeholder="Enter your text">
+    <input type="text" name="" class="data_input" id="data_input9" placeholder="What you search for">
+    <button style="margin-left: 250px;" onclick="result6()" class="result_btn" id="btn4">Match BTN</button>
+    <input type="text" name="" class="result_input" id="result6" placeholder="Result will display after click Match button" readonly>
+
+    <script>
+        
+        function result6(){
+            let d8_input = document.getElementById("data_input8").value;
+            let d9_input = document.getElementById("data_input9").value;
+
+            document.getElementById("result6").value = d8_input.startsWith(d9_input);
+        }
+    </script>
+</div>
+<!--Match Method End-->
+
 
         <div class="function">
             <p>Hello</p>
