@@ -89,7 +89,7 @@
             <input type="text" name="" class="slice_from" id="slice_from" placeholder="slice from">
             <input type="text" name="" class="slice_to" id="slice_to" placeholder="slice to">
             <button onclick="result()" class="result_btn" id="btn">SLICE BTN</button>
-            <input type="text" name="" class="result_input" id="result" placeholder="Result will display after Slice button" readonly>
+            <input type="text" name="" class="result_input" id="result" placeholder="Result will display after click Slice button" readonly>
 
 
             <script>
@@ -111,7 +111,7 @@
             <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">Replace Method</h3>
             <input type="number" name="" class="data_input" id="data_input1" placeholder="Enter Your Phone Number in 11 digit">
             <button style="margin-left: 250px; font-size: 13px;" onclick="result1()" class="result_btn" id="btn1">REPLACE BTN</button>
-            <input type="text" name="" class="result_input" id="result1" placeholder="Result will display after Replace button" readonly>
+            <input type="text" name="" class="result_input" id="result1" placeholder="Result will display after click Replace button" readonly>
 
             <script>
                 function result1(){
@@ -129,8 +129,8 @@
             <input type="text" name="" class="data_input" id="data_input2" placeholder="Enter first name">
             <input type="text" name="" class="data_input" id="data_input3" placeholder="Enter middle name">
             <input type="text" name="" class="data_input" id="data_input4" placeholder="Enter surname">
-            <button style="margin-left: 250px;" onclick="result2()" class="result_btn" id="btn1">C&U BTN</button>
-            <input type="text" name="" class="result_input" id="result2" placeholder="Result will display after C&U button" readonly>
+            <button style="margin-left: 250px;" onclick="result2()" class="result_btn" id="btn2">C&U BTN</button>
+            <input type="text" name="" class="result_input" id="result2" placeholder="Result will display after click C&U button" readonly>
 
             <script>
                 function result2(){
@@ -145,11 +145,11 @@
 <!--Concat and uppercase Method end-->
 
 
-
+<!--PadStart and PadEnd Method Start-->
         <div class="all_methods">
             <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">PadStart and PadEnd Method</h3>
             <input type="text" name="" class="data_input" maxlength="5" id="data_input5" placeholder="Enter your ID here">
-            <button style="margin-left: 250px;" onclick="result3()" class="result_btn" id="btn1">PS&PE BTN</button>
+            <button style="margin-left: 250px;" onclick="result3()" class="result_btn" id="btn3">PS&PE BTN</button>
             <input type="text" name="" class="result_input" id="result3" placeholder="Result of PadStart Method" readonly>
             <input type="text" name="" class="result_input" id="result4" placeholder="Result PadEnd Method" readonly>
 
@@ -160,14 +160,31 @@
                     document.getElementById("result3").value = d5_input.padStart(8, "0") +"         - PadStart Method";
                     document.getElementById("result4").value = d5_input.padEnd(8, "0") +"         - PadEnd Method";
                 }
-
             </script>
         </div>
+<!--PadStart and PadEnd Method End-->
 
 
-        <div class="function">
-            <p>Hello</p>
+<!--Match Method Start-->
+        <div class="all_methods">
+            <h3 style="text-align: center; font-size: 30px; font-family: Cambria;">Match Method</h3>
+            <input type="text" name="" class="data_input" id="data_input6" placeholder="Enter your text" value="You can change or CHANGED this text">
+            <input type="text" name="" class="data_input" id="data_input7" placeholder="What you search for" value="ang" readonly>
+            <button style="margin-left: 250px;" onclick="result4()" class="result_btn" id="btn4">Match BTN</button>
+            <input type="text" name="" class="result_input" id="result5" placeholder="Result will display after click Match button" readonly>
+
+            <script>
+                function result4(){
+                    let d6_input = document.getElementById("data_input6").value;
+                    let d7_input = document.getElementById("data_input7").value;
+
+                    document.getElementById("result5").value = d6_input.match(/ang/ig);
+                }
+            </script>
         </div>
+<!--Match Method End-->
+
+
 
         <div class="function">
             <p>Hello</p>
